@@ -1,0 +1,19 @@
+[package]
+name = "visible"
+version = "0.0.1"
+authors = ["David Li <davidli2010@foxmail.com>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+description = "Attributes to override the visibility of items."
+keywords = ["visibility", "pub", "override", "visible"]
+repository = "https://github.com/davidli2010/visible.git"
+homepage = "https://github.com/davidli2010/visible"
+documentation = "https://docs.rs/visible"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.0", features = ["full"] }
+quote = "1.0.0"
