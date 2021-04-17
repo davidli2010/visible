@@ -20,7 +20,7 @@ pub struct Test {
 }
 ```
 
-The struct `Test` is rewritten as below:
+The struct `Test` will be rewritten as below:
 
 ```Rust
 pub struct Test {

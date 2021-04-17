@@ -1,4 +1,23 @@
 //! Attributes to override the visibility of items.
+//!
+//! ## Example
+//!
+//! ```Rust
+//! #[visible::StructFields(pub(crate))]
+//! pub struct Test {
+//!     pub a: i32,
+//!     pub b: i64,
+//! }
+//! ```
+//!
+//! The struct `Test` will be rewritten as below:
+//!
+//! ```Rust
+//! pub struct Test {
+//!     pub(crate) a: i32,
+//!     pub(crate) b: i64,
+//! }
+//! ```
 
 use proc_macro::TokenStream;
 use quote::ToTokens;
